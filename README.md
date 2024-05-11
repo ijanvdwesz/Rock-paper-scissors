@@ -40,5 +40,5 @@ To reset the score and start a new game, click the "Reset Score" button. This wi
 ![Preview](images/preview.png)
 
 ## Credits
-- Coding guide by [Simon](https://supersimple.dev/).
-- Images sourced from [Simon](https://supersimple.dev/).
+- Coding guide by [Simon from supersimple.dev](https://supersimple.dev/).
+- Images sourced from [supersimple.dev](https://supersimple.dev/).
