@@ -4,21 +4,13 @@ let score = JSON.parse(localStorage.getItem('score')) || {
   ties: 0
 };
 
-/*
-if (!score) {
-  score = {
-    wins: 0,
-    losses: 0,
-    ties: 0
-  };
-}
-*/
+
 UpdateScoreElem();
 
 let isAuto= false;
 let intervalID;
 
-//const autoPlay=()=>{};
+
 function autoPlay() {
   if (!isAuto) {
     intervalID = setInterval(() => {
@@ -30,13 +22,6 @@ function autoPlay() {
     clearInterval(intervalID);
     isAuto = false;
   }
-
-
-  /*setInterval(function(){
-    const playerMove= pickComputerMove()
-    playGame(playerMove);
-
-  },1000);*/
 }
 
 document.querySelector('.js-rock-button').addEventListener('click',()=>{playGame('rock');});
@@ -111,12 +96,7 @@ function playGame(playerMove) {
   .innerHTML=`You
   <img src="images/${playerMove}-emoji.png" class="move-icon">
 <img src="images/${computerMove}-emoji.png"class="move-icon">Computer`;
-/*i intentionally left the popup there
-
-  alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
-*/}
+}
 
 function UpdateScoreElem()
 {    document.querySelector(".js-score")
