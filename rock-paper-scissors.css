@@ -1,0 +1,77 @@
+body{
+  background-color: rgb(30,30,30);
+  color: aliceblue;
+   font-family:arial;
+}
+.Title{font-size:30px;
+font-weight:bold;}
+.move-icon{
+  height:100px;
+}
+.move-button{background-color:transparent;
+border:5px dashed white;
+width: 150px;
+height:150px;
+border-radius: 75px;
+margin-right:35px ;
+cursor:pointer;
+}
+.result{color:palevioletred;
+font-size:25px;
+font-weight:bold;
+margin: top 50px;}
+.score{
+margin-top: 70px;
+}
+.reset,
+.autoplay{background-color: cyan;
+width: 200px;
+height:100px;
+color:crimson;
+font-size: 25px;
+font-weight: bold;
+font-family: cursive;
+border-radius: 50px;
+border-color: crimson;
+cursor: pointer;}
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .Title {
+    font-size: 24px;
+  }
+
+  .move-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 20px;
+  }
+
+  .reset,
+  .autoplay {
+    width: 150px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .Title {
+    font-size: 20px;
+  }
+
+  .move-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 65px;
+    margin-right: 10px;
+  }
+
+  .reset,
+  .autoplay {
+    width: 120px;
+    height: 60px;
+    font-size: 18px;
+  }
+}
